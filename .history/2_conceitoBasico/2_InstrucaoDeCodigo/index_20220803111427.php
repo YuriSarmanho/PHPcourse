@@ -1,0 +1,7 @@
+<?php
+echo "uma linha <br>";
+echo "outra de uma   linha <br>";
+
+    if(5>2){
+        echo "echo dentro do if"
+    }
