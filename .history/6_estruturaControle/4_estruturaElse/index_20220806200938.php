@@ -1,0 +1,5 @@
+<?php
+
+echo if(false){
+    
+}
