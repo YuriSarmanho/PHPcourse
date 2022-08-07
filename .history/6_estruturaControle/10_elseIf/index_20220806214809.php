@@ -1,0 +1,6 @@
+<?php
+
+
+function teste($var){
+    if(is_)
+}
