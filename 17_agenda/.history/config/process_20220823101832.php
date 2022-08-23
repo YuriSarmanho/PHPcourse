@@ -20,9 +20,7 @@
 
         $stmt->bindParam(":id", $id);
 
-        $stmt->execute();
-
-        $contact = $stmt->fetch();
+        $stmt->exe
 
     } else {
         //Retorna todos os contatos

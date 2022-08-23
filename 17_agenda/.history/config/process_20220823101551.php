@@ -14,16 +14,8 @@
     //Retorna o dado do contato
     if(!empty($id)) {
 
-        $query = "SELECT * FROM contacts WHERE id = :id";
 
-        $stmt = $conn->prepare($query);
-
-        $stmt->bindParam(":id", $id);
-
-        $stmt->execute();
-
-        $contact = $stmt->fetch();
-
+        
     } else {
         //Retorna todos os contatos
     

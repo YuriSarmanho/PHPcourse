@@ -16,13 +16,7 @@
 
         $query = "SELECT * FROM contacts WHERE id = :id";
 
-        $stmt = $conn->prepare($query);
-
-        $stmt->bindParam(":id", $id);
-
-        $stmt->execute();
-
-        $contact = $stmt->fetch();
+        $stmt = $conn->prepare($quer)
 
     } else {
         //Retorna todos os contatos

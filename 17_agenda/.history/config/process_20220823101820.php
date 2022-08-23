@@ -18,11 +18,7 @@
 
         $stmt = $conn->prepare($query);
 
-        $stmt->bindParam(":id", $id);
-
-        $stmt->execute();
-
-        $contact = $stmt->fetch();
+        $stmt->bindParam(":id", )
 
     } else {
         //Retorna todos os contatos

@@ -22,7 +22,7 @@
 
         $stmt->execute();
 
-        $contact = $stmt->fetch();
+        $contact = $stmt
 
     } else {
         //Retorna todos os contatos
