@@ -1,4 +1,4 @@
-  .navbar-brand img {
+.navbar-brand img {
     width: 50px;
   }
   
@@ -33,7 +33,7 @@
   }
   
   .check-icon {
-    color: #1E7E34;
+    color: #301e7e;
   }
   
   .edit-icon {
@@ -95,10 +95,3 @@
   #back-link:hover {
     text-decoration: none;
   }
-
-  /* CREATE */
-
-.create-form, .edit-form {
-  width: 500px;
-  margin: 0 auto;
-}

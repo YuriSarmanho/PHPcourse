@@ -4,7 +4,7 @@
     <div class="container">
         <?= include_once("templates/backbtn.html");?>
         <h1 id="main-title">Criando Contato</h1>
-        <form class="create-form" action="<?=$BASE_URL?>config/process.php" method="POST">
+        <form action="<?=$BASE_URL?>config/process.php" method="POST">
             <input type="hidden" name="type" value="create">
             <div class="form-group">
                 <label for="nome">Nome do Contato</label>
@@ -16,7 +16,7 @@
             </div>
             <div class="form-group">
                 <label for="observations">Observações</label>
-                <textarea type="text" class="form-control" id="observations" name="observations" placeholder="Insira as observações" rows="3"></textarea>
+                <text7 type="text" class="form-control" id="observations" name="observations" placeholder="Insira as observações">
             </div>
             <button type="submit" class="btn btn-primary">Cadastrar</button>
         </form>
