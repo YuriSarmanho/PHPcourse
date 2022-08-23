@@ -63,11 +63,3 @@
 
 /*SHOW/ CONTATO INDIVIDUAL*/
 
-#view-contact-container {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.bold {
-    font-weight: bold;
-}
