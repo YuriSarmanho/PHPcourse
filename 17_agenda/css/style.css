@@ -49,7 +49,9 @@
     border: none;
     padding: 0;
   }
-  
+  .delete-form {
+    display: inline-block;
+  }
   .delete-icon {
     color: #BD2130;
   }
@@ -101,4 +103,10 @@
 .create-form, .edit-form {
   width: 500px;
   margin: 0 auto;
+}
+
+@media(max-width:480px) {
+  #home-link {
+    display: none;
+  }
 }
