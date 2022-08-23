@@ -1,5 +1,5 @@
 <?php
-    include_once("templates/header.php");
+    //include_once("templates/header.php");
 ?>
     <div class="container">
         <?php if(isset($printMsg) && $printMsg != ''): ?>
@@ -24,7 +24,7 @@
                             <td scope="row"><?= $contact["phone"] ?></td>
                             <td class="actions">
                                 <a href="#"><i class="fas fa-eye check-icon"></i></a>
-                                <a href="#"><i class="far fa-edit edit-icon"></i></a>
+                                <a href="#"><i class="fas fa-eye check-icon"></i></a>
                                 <button class='delete-btn' type="submit"><i class="fas fa-time delete-icon"></i></button>
                             </td>
                         </tr>

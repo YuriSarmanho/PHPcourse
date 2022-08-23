@@ -2,7 +2,7 @@
 
     session_start();
 
-    include_once("connections.php");
+    include_once("connection.php");
     include_once("url.php");
 
     $query = "SELECT * FROM contacts";
