@@ -70,7 +70,6 @@
                 <li><a href="#">Entrar / Registrar</a></li>
             </ul>
         </div>
-        <p>&copy; 2020 Hora de Codar</p>
     </footer>
 
 <!-- Bootstrap JS-->

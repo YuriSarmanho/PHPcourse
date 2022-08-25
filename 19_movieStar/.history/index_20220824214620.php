@@ -34,44 +34,11 @@
                 <input type="text" name="q" id="search" class="form-control mr-sm-2" type="search"
                 placeholder="Buscar filmes" aria-label="Search">
                 <button class="btn my-2 my-sm-0" type="submit">
-                    <i class="fas fa-search"></i>
+                    <i></i>
                 </button>
             </form>
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="<?=$BASE_URL?>auth.php" class="nav-link">Entrar / Cadastrar</a>
-                    </li>
-                </ul>
-            </div>
         </nav>
     </header>
-    <div id="main-container" class="container-fluid">
-        <h1>Corpo do site</h1>
-    </div>
-    <footer id="footer">
-        <div class="social-container">
-            <ul>
-                <li>
-                    <a href="#"><i class="fab fa-facebook-square"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-links-container">
-            <ul>
-                <li><a href="#">Adicionar filme</a></li>
-                <li><a href="#">Adicionar crítica</a></li>
-                <li><a href="#">Entrar / Registrar</a></li>
-            </ul>
-        </div>
-        <p>&copy; 2020 Hora de Codar</p>
-    </footer>
 
 <!-- Bootstrap JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.js" integrity="sha512-39Q5Yw4jtWPVkYu5Dry3HiRh6DWG4FDODb/rHF+X2Xp0kzhg9VgTyYV209uQ/EsqPDP/4dDvwm1rb8JgnAkHNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

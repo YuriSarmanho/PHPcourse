@@ -67,10 +67,9 @@
             <ul>
                 <li><a href="#">Adicionar filme</a></li>
                 <li><a href="#">Adicionar crítica</a></li>
-                <li><a href="#">Entrar / Registrar</a></li>
+                <li><a href="#">Adicionar filme</a></li>
             </ul>
         </div>
-        <p>&copy; 2020 Hora de Codar</p>
     </footer>
 
 <!-- Bootstrap JS-->
