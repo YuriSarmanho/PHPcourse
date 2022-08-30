@@ -28,6 +28,8 @@ class UserDAO implements UserDAOInterface
         $user->image = $data["image"];
         $user->bio = $data["bio"];
         $user->token = $data["token"];
+
+        return $user;
     }
     public function create(User $user, $authUser = false)
     {
@@ -118,16 +120,16 @@ class UserDAO implements UserDAOInterface
 
         if($user) {
             //Checar se as senhas batem
-            if(password_verify($password, $this->$user->password)) {
+            if(password_verify($password, $user->password)) {
                 //Gerar um token e inserir na session
-                $token = $this->$user->generateToken();
+                $token = $user->generateToken();
 
                 $this->setTokenToSession($token, false);
 
                 //Atualizar token no usuário
-                $this->$user->token = $token;
+                $user->token = $token;
                 
-                $this->update($this->$user, false);
+                $this->update($user, false);
             } else {
               return false;  
             }
@@ -184,6 +186,19 @@ class UserDAO implements UserDAOInterface
     }
     public function changePassword(User $user)
     {
+
+        $stmt = $this->conn->prepare("UPDATE users SET
+            password = :password
+            WHERE id = :id
+        ");
+
+        $stmt->bindParam(":password", $user->password);
+        $stmt->bindParam(":id", $user->id);
+
+        $stmt->execute();
+
+        //Redirecionar e apresentar a msg de sucesso
+        $this->message->setMessage("Senha alterada com sucesso!", "success", "editprofile.php");
     }
     public function destroyToken()
     {

@@ -6,6 +6,7 @@ require_once("models/Message.php");
 require_once("DAO/UserDAO.php");
 
 $message = new Message($BASE_URL);
+$userDao = new UserDAO($conn, $BASE_URL);
 
 //Resgata o tipo do formulário
 
